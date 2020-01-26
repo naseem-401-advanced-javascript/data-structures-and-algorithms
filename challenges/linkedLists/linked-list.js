@@ -15,6 +15,7 @@ class LinkedList {
         let node = new Node(value);
         if (!this.head) {
             this.head = node
+            return this
         }
         let currentNode = this.head;
         while (currentNode.next) {
@@ -36,6 +37,7 @@ class LinkedList {
         }
         return false;
     }
+
     toString() {
         let currentNode = this.head;
         let linkedListStreng = ''
@@ -45,5 +47,52 @@ class LinkedList {
         }
         return linkedListStreng += ` NULL`;
     }
+
+    insertBefore(value, newVal) {
+        let newNode = new Node(newVal)
+        let currentNode = this.head;
+        let preNode = null;
+
+        while (currentNode) {
+            if (currentNode.value === value) {
+                if (preNode === null) {
+                    this.head = newNode;
+                } else {
+                    preNode.next = newNode;
+                }
+                newNode.next = currentNode;
+                break;
+            }
+            preNode = currentNode
+            currentNode = currentNode.next
+        }
+
+    }
+
+    insertAfter(value, newVal) {
+        let savedNode = null;
+        let newNode = new Node(newVal)
+        let currentNode = this.head
+
+        while (currentNode) {
+            if (currentNode.value === value) {
+                savedNode = currentNode.next
+                currentNode.next = newNode;
+                newNode.next = savedNode;
+            }
+            currentNode = currentNode.next;
+
+        }
+    }
 }
+
+const nas = new LinkedList();
+
+nas.insert(1)
+nas.insert(2)
+nas.insert(3)
+nas.insertBefore(2, 1.5)
+console.log(nas.head);
+
+
 module.exports = LinkedList;
