@@ -84,15 +84,27 @@ class LinkedList {
 
         }
     }
+    kthFromEnd(k){
+        let currentNode = this.head;
+        let length=0;
+        while (currentNode) {
+            length++
+            currentNode=currentNode.next;
+        }
+        let demandedNode = length-1-k;
+        if (demandedNode <0||k<0) {
+            return "exception"; 
+        }
+        currentNode= this.head;
+        while (demandedNode>0) {
+            demandedNode--;
+            currentNode=currentNode.next;
+        }
+        return currentNode.value;
+    }
+
 }
 
-const nas = new LinkedList();
-
-nas.insert(1)
-nas.insert(2)
-nas.insert(3)
-nas.insertBefore(2, 1.5)
-console.log(nas.head);
 
 
 module.exports = LinkedList;

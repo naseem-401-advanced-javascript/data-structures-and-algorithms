@@ -84,4 +84,51 @@ describe('Linked List', () => {
         ll.insertAfter('buzz', 'newVal')
         expect(ll.toString()).toMatch('foo -> fuzz -> buzz -> newVal -> NULL')
     });
+
+    it('test Where k is greater than the length of the linked list', () => {
+        ll.insert(1);
+        ll.insert(2);
+        ll.insert(3);
+        ll.insert(4);
+        ll.insert(5); // length of ll = 5
+
+        expect(ll.kthFromEnd(8)).toMatch('exception')
+    });
+
+    it('test Where k and the length of the list are the same', () => {
+        ll.insert(1);
+        ll.insert(2);
+        ll.insert(3);
+        ll.insert(4);
+        ll.insert(5); // length of ll = 5
+
+        expect(ll.kthFromEnd(5)).toMatch('exception')
+    });
+
+    it('test Where k is not a positive integer', () => {
+        ll.insert(1);
+        ll.insert(2);
+        ll.insert(3);
+        ll.insert(4);
+        ll.insert(5); // length of ll = 5
+
+        expect(ll.kthFromEnd(-1)).toMatch('exception')
+    });
+
+    it('test Where the linked list is of a size 1', () => {
+        ll.insert(5); // length of ll = 1
+
+        expect(ll.kthFromEnd(1)).toMatch('exception')
+    });
+
+    it('test Where k is not at the end, but somewhere in the middle of the linked list', () => {
+        ll.insert(1);
+        ll.insert(2);
+        ll.insert(3);
+        ll.insert(4);
+        ll.insert(5); // length of ll = 5
+
+        expect(ll.kthFromEnd(1)).toEqual(4)
+    });
+
 }); 
