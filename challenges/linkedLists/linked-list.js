@@ -103,6 +103,23 @@ class LinkedList {
         return currentNode.value;
     }
 
+    mergeLists(list1,list2){
+        let currentNode1 = list1.head;
+        let currentNode2 =list2.head;
+
+        while(currentNode1||currentNode2){
+            if (currentNode1){
+                this.insert(currentNode1.value)
+                currentNode1=currentNode1.next
+            }
+            if(currentNode2){
+                this.insert(currentNode2.value)
+                currentNode2=currentNode2.next
+            }
+        }
+        return this;
+    }
+
 }
 
 
