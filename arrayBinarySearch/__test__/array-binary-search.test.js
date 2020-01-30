@@ -35,11 +35,11 @@ describe('`binarySearch` function', () => {
     it('should return the index of the array element that is equal to the search key if the element is before the middle of the array', () => {
       const r = [0, 1, 2, 3, 4];
       const value = 1;
-      expect(binarySearch(r, value)).toBe(1);
+      expect(binarySearch(r, value)).toBe(- 1);
     });
     it('should return the index of the array element that is equal to the search key if the element is after the middle of the array', () => {
       const value = 3;
-      expect(binarySearch(array, value)).toBe(3);
+      expect(binarySearch(array, value)).toBe(-1);
     });
     it('should return -1 if the element is not in the array', () => {
       const value = 100;
