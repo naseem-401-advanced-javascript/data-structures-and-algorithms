@@ -38,6 +38,7 @@ It will return the first value of the second list as the second value in the new
 It will return the second value of the second list as the third value in the new list
 
 ## code challenge 7:
+---
 ### Unit Tests
 Where k is greater than the length of the linked list
 Where k and the length of the list are the same
@@ -46,3 +47,7 @@ Where the linked list is of a size 1
 “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
 
 worked as pair with Ibrahim
+
+## code challenge 8:
+---
+Write a function called mergeLists which takes two linked lists as arguments and merge it togather.
