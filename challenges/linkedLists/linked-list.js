@@ -8,25 +8,25 @@ class Node {
 
 class LinkedList {
     constructor() {
-        this.head = null
+        this.head = null;
     }
 
     insert(value) {
         let node = new Node(value);
         if (!this.head) {
-            this.head = node
+            this.head = node;
+            return this////to not make it infint loop
         }
         let currentNode = this.head;
         while (currentNode.next) {
             currentNode = currentNode.next;
         }
         currentNode.next = node;
-        return this
-
+        return this;
     }
 
     includes(value) {
-        let currentNode = this.head
+        let currentNode = this.head;
         while (currentNode) {
             if (currentNode.value === value) {
                 return true;
@@ -38,7 +38,7 @@ class LinkedList {
     }
     toString() {
         let currentNode = this.head;
-        let linkedListStreng = ''
+        let linkedListStreng = '';
         while (currentNode) {
             linkedListStreng += ` ${currentNode.value} ->`;
             currentNode = currentNode.next;
