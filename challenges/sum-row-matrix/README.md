@@ -1,17 +1,15 @@
 
-## Code Challenge 04:find the sum of each row in the matrix.
+## Code Challenge 04: Mock Interviews
 
+## Challenge Description
+* It asks you to write a function that takes an array of arrays and return the summation of these inside arrays.
 
-[PR](https://github.com/naseem-401-advanced-javascript/data-structures-and-algorithms/tree/master)
+* also the challenge ask you to do Fibonacci sequence which is a set of numbers that starts with a one or a zero, followed by a one, and proceeds based on the rule that each number (called a Fibonacci number) is equal to the sum of the preceding two numbers.
 
+## Approach & Efficiency
+* We first wrote a function named `sumMatrix()` that will give the summation of any matrix(array of arrays) you pass to it .
 
-# Array Binary Search
-Given a matrix, find the sum of each row.
-
-
-## Challenge
-Write a function called sumMatrix which is sum each row in the matrix and push it to new array.
-
+* The second function named `fibSeq()` will give you the number of any positive or negative index that you oass to it.
 
 ## Solution
-![whiteboard](../../assest/WhatsApp Image 2020-01-21 at 16.39.17.jpeg)
+![](assesst/1.jpeg)

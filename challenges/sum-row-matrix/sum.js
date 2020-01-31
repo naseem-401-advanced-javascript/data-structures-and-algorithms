@@ -13,7 +13,22 @@ function sumMatrix(array) {
 }
 
 
+/// with Ibrahim
+function fibSeq(num) {
+    let arr = [0, 1];
+    for (let i = 0; i < Math.abs(num) - 1; i++) {
+        arr[i + 2] = arr[i] + arr[i + 1];
+    };
+    if (num >= 0) {
+        return arr[num];
+    };
+    if (num < 0) {
+        if (Math.abs(num) % 2 === 0) {
+            return -arr[Math.abs(num)];
+        } else {
+            return arr[Math.abs(num)];
+        };
+    };
+};
 
-
-
-module.exports = { sumMatrix, fibSeq };
+export default { sumMatrix, fibSeq }
