@@ -1,6 +1,6 @@
 'use strict';
 
-const functions = require('../lib/sum-matrix.js').default;
+const functions = require('../sum.js').default;
 
 describe('Functions of the two interviews', () => {
 
