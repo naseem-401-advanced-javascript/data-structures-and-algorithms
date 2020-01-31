@@ -1,48 +1,11 @@
-## Write the following methods for the Linked List class:
+# Challenge Summary
+This challenge makes you more familiar with linkedLists and how to do methods on them
 
-.append(value) which adds a new node with the given value to the end of the list
-.insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node
-.insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node
+## Challenge Description
+The challenge asks you to create a method inside your linked list class named `kthFromEnd()` which will count based on the passed value from the end of the linked list and give you back the value of the node where the counter stops, if the the value is negative or out of range will return `exception`
 
+## Approach & Efficiency
+The Big O notation defines an upper bound of an algorithm, it bounds a function only from above. For example, consider the case of Insertion Sort. It takes linear time in best case and quadratic time in worst case
 
-## Write the following tests:
-
-Can successfully add a node to the end of the linked list
-Can successfully add multiple nodes to the end of a linked list
-Can successfully insert a node before a node located i the middle of a linked list
-Can successfully insert a node before the first node of a linked list
-Can successfully insert after a node in the middle of the linked list
-Can successfully insert a node after the last node of the linked list
-
-## Write the following method for the Linked List class:
-
-Write a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
-
-
-## Write the following tests:
-
-Where k is greater than the length of the linked list
-Where k and the length of the list are the same
-Where k is not a positive integer
-Where the linked list is of a size 1
-“Happy Path” where k is not at the end, but somewhere in the middle of the linked list
-
-## Write the following method for the Linked List class:
-
-Write a function called mergeLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. Try and keep additional space down to O(1). You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
-
-
-## Write the following tests:
-
-It will return the first value of the second list as the second value in the new list
-It will return the second value of the second list as the third value in the new list
-
-## code challenge 7:
-### Unit Tests
-Where k is greater than the length of the linked list
-Where k and the length of the list are the same
-Where k is not a positive integer
-Where the linked list is of a size 1
-“Happy Path” where k is not at the end, but somewhere in the middle of the linked list
-
-worked as pair with Ibrahim
+## Solution
+![](../assest/7.jpg)
