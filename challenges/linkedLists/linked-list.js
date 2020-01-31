@@ -8,26 +8,25 @@ class Node {
 
 class LinkedList {
     constructor() {
-        this.head = null
+        this.head = null;
     }
 
     insert(value) {
         let node = new Node(value);
         if (!this.head) {
-            this.head = node
-            return this
+            this.head = node;
+            return this;
         }
         let currentNode = this.head;
         while (currentNode.next) {
             currentNode = currentNode.next;
         }
         currentNode.next = node;
-        return this
-
+        return this;
     }
 
     includes(value) {
-        let currentNode = this.head
+        let currentNode = this.head;
         while (currentNode) {
             if (currentNode.value === value) {
                 return true;
@@ -40,7 +39,7 @@ class LinkedList {
 
     toString() {
         let currentNode = this.head;
-        let linkedListStreng = ''
+        let linkedListStreng = '';
         while (currentNode) {
             linkedListStreng += ` ${currentNode.value} ->`;
             currentNode = currentNode.next;
@@ -49,7 +48,7 @@ class LinkedList {
     }
 
     insertBefore(value, newVal) {
-        let newNode = new Node(newVal)
+        let newNode = new Node(newVal);
         let currentNode = this.head;
         let preNode = null;
 
@@ -63,20 +62,20 @@ class LinkedList {
                 newNode.next = currentNode;
                 break;
             }
-            preNode = currentNode
-            currentNode = currentNode.next
+            preNode = currentNode;
+            currentNode = currentNode.next;
         }
 
     }
 
     insertAfter(value, newVal) {
         let savedNode = null;
-        let newNode = new Node(newVal)
-        let currentNode = this.head
+        let newNode = new Node(newVal);
+        let currentNode = this.head;
 
         while (currentNode) {
             if (currentNode.value === value) {
-                savedNode = currentNode.next
+                savedNode = currentNode.next;
                 currentNode.next = newNode;
                 newNode.next = savedNode;
             }
@@ -109,12 +108,12 @@ class LinkedList {
 
         while(currentNode1||currentNode2){
             if (currentNode1){
-                this.insert(currentNode1.value)
-                currentNode1=currentNode1.next
+                this.insert(currentNode1.value);
+                currentNode1=currentNode1.next;
             }
             if(currentNode2){
-                this.insert(currentNode2.value)
-                currentNode2=currentNode2.next
+                this.insert(currentNode2.value);
+                currentNode2=currentNode2.next;
             }
         }
         return this;
