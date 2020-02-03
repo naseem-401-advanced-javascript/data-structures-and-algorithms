@@ -8,3 +8,6 @@
 - 27-Jan k-th 
 - 28-Jan llMerge
 - 1-Feb Stack and Queue Implementation
+- 2-Feb Queue With Stacks
+- 3-Feb Fifi Animal Shelter
+
