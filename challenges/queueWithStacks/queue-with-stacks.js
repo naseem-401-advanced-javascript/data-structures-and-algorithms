@@ -9,7 +9,7 @@ class PsuedoQueue{
     enqueue(item) {
         this.stackFirst.push(item);
     }
-    //here  i implement dequeu method by pushing all items from stack 1 into stack 2, so it revers order , now pop from stack 2
+    //here i implement dequeu method by pushing all items from stack 1 into stack 2, so it revers order , now pop from stack 2
 dequeue(){
     if(this.stackFirst.length === 0){
         return 'empty';

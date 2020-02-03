@@ -17,7 +17,8 @@ describe('test the class of pseudoqueue',()=>{
         pseudoQueue.enqueue('15');
         pseudoQueue.enqueue('20');
         pseudoQueue.dequeue();
-        expect(pseudoQueue.stackFirst).toEqual(['10', '15']);
+        console.log(pseudoQueue.stackFirst)
+        expect(pseudoQueue.stackFirst).toEqual(['15', '20']);
       });
       it('It should successfully dequeue all items', () => {
         pseudoQueue.enqueue('10');
