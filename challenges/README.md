@@ -7,3 +7,6 @@
 - 27-Jan k-th 
 - 28-Jan llMerge
 - 1-Jan Stack and Queue Implementation
+- 3-Feb Fifi Animal Shelter
+- 4-Feb Multi-bracket Validation.
+
