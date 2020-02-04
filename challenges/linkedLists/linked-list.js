@@ -1,3 +1,7 @@
+/* eslint-disable no-undef */
+/* eslint-disable quotes */
+/* eslint-disable indent */
+/* eslint-disable no-redeclare */
 'use strict';
 
 class Node {

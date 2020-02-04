@@ -1,3 +1,5 @@
+/* eslint-disable indent */
+/* eslint-disable no-undef */
 'use strict';
 
 const LinkedList = require('../linked-list.js');
@@ -14,7 +16,7 @@ describe('Linked List', () => {
     });
 
     it('Can properly insert into the linked list', () => {
-        ll.insert(5)
+        ll.insert(5);
         expect(ll.head.value).toEqual(5);
     });
 

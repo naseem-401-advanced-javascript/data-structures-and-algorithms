@@ -7,5 +7,8 @@ The challenge asks you to create a method inside your linked list class named `k
 ## Approach & Efficiency
 The Big O notation defines an upper bound of an algorithm, it bounds a function only from above. For example, consider the case of Insertion Sort. It takes linear time in best case and quadratic time in worst case
 
+## Big O:
+kthFromEnd:O(1)
+
 ## Solution
 ![](../assest/7.jpg)
