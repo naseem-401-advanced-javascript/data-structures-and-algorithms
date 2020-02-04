@@ -1,3 +1,6 @@
+/* eslint-disable quotes */
+/* eslint-disable indent */
+/* eslint-disable no-undef */
 'use strict';
 
 const LinkedList = require('../linked-list.js');

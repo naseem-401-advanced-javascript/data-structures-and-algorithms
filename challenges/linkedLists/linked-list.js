@@ -1,3 +1,7 @@
+/* eslint-disable no-undef */
+/* eslint-disable quotes */
+/* eslint-disable no-redeclare */
+/* eslint-disable indent */
 'use strict';
 class Node {
     constructor(value) {
@@ -85,35 +89,35 @@ class LinkedList {
     }
     kthFromEnd(k){
         let currentNode = this.head;
-        let length=0;
+        let length = 0;
         while (currentNode) {
-            length++
-            currentNode=currentNode.next;
+            length++;
+            currentNode = currentNode.next;
         }
-        let demandedNode = length-1-k;
-        if (demandedNode <0||k<0) {
+        let demandedNode = length - 1 - k ;
+        if (demandedNode < 0 || k < 0) {
             return "exception"; 
         }
-        currentNode= this.head;
-        while (demandedNode>0) {
+        currentNode = this.head;
+        while (demandedNode > 0) {
             demandedNode--;
-            currentNode=currentNode.next;
+            currentNode = currentNode.next;
         }
         return currentNode.value;
     }
 
     mergeLists(list1,list2){
         let currentNode1 = list1.head;
-        let currentNode2 =list2.head;
+        let currentNode2 = list2.head;
 
-        while(currentNode1||currentNode2){
+        while(currentNode1 || currentNode2){
             if (currentNode1){
                 this.insert(currentNode1.value);
-                currentNode1=currentNode1.next;
+                currentNode1 = currentNode1.next;
             }
             if(currentNode2){
                 this.insert(currentNode2.value);
-                currentNode2=currentNode2.next;
+                currentNode2 = currentNode2.next;
             }
         }
         return this;
