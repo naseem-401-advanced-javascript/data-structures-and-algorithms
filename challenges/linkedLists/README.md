@@ -20,5 +20,10 @@ npm run test` : to see the results of the test
 `toString()` : This finction takes the value for each node and return them as a string
 
 
+# Big(O) efficiency
+- insert : I need to insert it at the last of the linked list so, Big O is O(n) since I am not use the tail if I used Tail the Big O it will be O(1)
+- Includes : I need to check each node till I got the excat node I need so, the big O notation is O(1-n) 
+- Tostring : for each node I need to convert it to string so, big O is O(n) 
+
 
 ![whiteboard]()
