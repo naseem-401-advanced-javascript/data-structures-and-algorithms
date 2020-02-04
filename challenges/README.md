@@ -10,4 +10,6 @@
 - 1-Feb Stack and Queue Implementation
 - 2-Feb Queue With Stacks
 - 3-Feb Fifi Animal Shelter
+- 4-Feb Multi-bracket Validation.
+
 
