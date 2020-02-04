@@ -1,3 +1,7 @@
+/* eslint-disable no-undef */
+/* eslint-disable quotes */
+/* eslint-disable indent */
+/* eslint-disable no-redeclare */
 'use strict';
 
 class Node {
@@ -75,7 +79,7 @@ class LinkedList {
 
         while (currentNode) {
             if (currentNode.value === value) {
-                savedNode = currentNode.next
+                savedNode = currentNode.next;
                 currentNode.next = newNode;
                 newNode.next = savedNode;
             };
