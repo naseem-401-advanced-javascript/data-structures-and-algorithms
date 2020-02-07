@@ -13,4 +13,9 @@
 * Can successfully remove a cat from the stack
 * Will not dequeue anything if the pref is not dog or cat
 
+### Big O :
+This solution has a Big O notation efficiency of O(n) for time and O(1) for space.
+
+
+
 ![uml](assest/code12.jpeg)
