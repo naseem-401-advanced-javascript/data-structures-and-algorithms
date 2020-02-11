@@ -3,7 +3,7 @@
 /* eslint-disable strict */
 'use strict';
 
-const { Node, BinaryTree } = require('../bredth.js');
+const { Node, BinaryTree } = require('../find-maximum-binary-tree');
 
 describe('breadth-first', () => {
     let tree;
@@ -24,7 +24,8 @@ describe('breadth-first', () => {
         tree = new BinaryTree(one);
     });
     it('should return an array with the proper values', () => {
-        let expected = [1, 2, 3, 6, 5, 4];
-        expect(tree.breadthFirst(tree.root)).toEqual(expected);
+        let expected = 6;
+        tree.breadthFirst(tree.root)
+        expect(tree.findMaximumValue()).toEqual(expected);
     });
 });

@@ -11,4 +11,6 @@
 - 4-Feb Multi-bracket Validation.
 - 6-Feb Interview questions.
 - 8-Feb Binary Tree and BST Implementation.
+- 10-Feb Breadth-first Traversal.
+- 11-Feb Find the Maximum Value in a Binary Tree
 
