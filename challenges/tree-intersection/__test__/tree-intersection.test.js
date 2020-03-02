@@ -2,7 +2,7 @@
 
 'use strict';
 
-const {Node, BinaryTree, treeIntersection} = require('../treeIntersection.js');
+const {Node, BinaryTree, treeIntersetion} = require('../tree-intersection');
 
 describe('tree intersection',()=>{
   const node1 = new Node(150);
@@ -38,7 +38,7 @@ describe('tree intersection',()=>{
   node23.right = node27;
 
   it('should returns an array with the common values',()=>{
-    let result = treeIntersection(tree1,tree2);
+    let result = treeIntersetion(tree1,tree2);
     expect(result).toEqual([100, 160, 200, 350]);
   });
 });
