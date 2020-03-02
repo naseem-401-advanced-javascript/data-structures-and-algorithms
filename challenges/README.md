@@ -19,3 +19,5 @@
 - 26-Feb Quick Sort
 - 27-Feb Mock Interviews
 - 28-Feb Hash Table Implementation
+- 1-Feb Repeted Word
+- 2-Feb Tree intersection
