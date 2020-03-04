@@ -19,5 +19,7 @@
 - 26-Feb Quick Sort
 - 27-Feb Mock Interviews
 - 28-Feb Hash Table Implementation
-- 1-Feb Repeted Word
-- 2-Feb Tree intersection
+- 1-Mar Repeted Word
+- 2-Mar Tree intersection
+- 3-Mar LEFT JOIN for 2 Hashmaps.
+
